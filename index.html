@@ -6,7 +6,6 @@
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..."
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
@@ -21,16 +20,21 @@
       display: inline-block;
       margin: 15px;
       text-decoration: none;
-      color: #333;
       font-size: 40px;
     }
-    .icon-links a:hover {
-      color: #0073e6;
-    }
-    .label {
+    .icon-links a .fa-newspaper { color: #DB4437; }        /* Google News - red */
+    .icon-links a .fa-envelope { color: #0078D4; }         /* Outlook - blue */
+    .icon-links a .fa-chart-line { color: #430297; }       /* Yahoo Finance - purple */
+    .icon-links a .fa-university { color: #500000; }       /* TAMU maroon */
+    .icon-links a .fa-cloud-sun { color: #FFA500; }        /* Weather - orange */
+    .icon-links .label {
       display: block;
       font-size: 14px;
       margin-top: 5px;
+      color: #333;
+    }
+    .icon-links a:hover i {
+      filter: brightness(1.3);
     }
   </style>
 </head>
