@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Start Page</title>
+  <meta charset="UTF-8">
+  <title>Quick Links Dashboard</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <style>
-    body { font-family: sans-serif; background-color: #f0f0f0; margin: 0; padding: 2rem; }
-    h1 { color: #333; }
-    .links, .widgets { margin-top: 2rem; }
-    .links a { display: block; margin: 0.5rem 0; color: #0078d4; text-decoration: none; }
-    iframe { border: none; width: 100%; height: 300px; margin-top: 1rem; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+    .icon-links a {
+      display: inline-block;
+      margin: 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 40px;
+    }
+    .icon-links a:hover {
+      color: #0073e6;
+    }
+    .label {
+      display: block;
+      font-size: 14px;
+      margin-top: 5px;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome, Rujun</h1>
-
-  <div class="links">
-    <h2>My Sites</h2>
-    <a href="https://www.github.com/" target="_blank">GitHub</a>
-    <a href="https://news.ycombinator.com/" target="_blank">Hacker News</a>
-    <a href="https://finance.yahoo.com/" target="_blank">
-
-  <img src="images/yahoofinance.png" alt="YahooFin" width="32" height="32" />
-</a>
-
-    <a href="https://www.nytimes.com/" target="_blank">NY Times</a>
-    <!-- Add more links here -->
-  </div>
-  
-<!-- Weather Widget -->
-<a class="weatherwidget-io" href="https://forecast7.com/en/29d79n95d83/katy/" data-label_1="KATY" data-label_2="WEATHER" data-theme="original">KATY WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
-js.src='https://weatherwidget.io/js/widget.min.js';
-fjs.parentNode.insertBefore(js,fjs);}
-}(document,'script','weatherwidget-io-js');
-</script>
-
-  <div class="widgets">
-    <h2>News & Stocks</h2>
-    <!-- Replace with any news RSS or finance widget you prefer -->
-    <iframe src="https://widgets.financialcontent.com/stocks?layout=news" title="Stock Ticker"></iframe>
-    <iframe src="https://rss.app/embed/v1/wall-street-journal" title="News Feed"></iframe>
+  <h2>Quick Access Links</h2>
+  <div class="icon-links">
+    <a href="https://news.google.com/" target="_blank" title="Google News">
+      <i class="fas fa-newspaper"></i>
+      <span class="label">Google News</span>
+    </a>
+    <a href="https://outlook.live.com/" target="_blank" title="Outlook">
+      <i class="fas fa-envelope"></i>
+      <span class="label">Outlook</span>
+    </a>
+    <a href="https://finance.yahoo.com/" target="_blank" title="Yahoo Finance">
+      <i class="fas fa-chart-line"></i>
+      <span class="label">Yahoo Finance</span>
+    </a>
+    <a href="https://howdy.tamu.edu/" target="_blank" title="Texas A&M Howdy">
+      <i class="fas fa-university"></i>
+      <span class="label">Howdy Portal</span>
+    </a>
   </div>
 </body>
 </html>
